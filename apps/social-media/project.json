@@ -1,0 +1,24 @@
+{
+  "name": "social-media",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/social-media/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "social-media:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "social-media:build:development"
+        },
+        "production": {
+          "buildTarget": "social-media:build:production"
+        }
+      }
+    }
+  }
+}
