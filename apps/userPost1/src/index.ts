@@ -8,6 +8,7 @@ app.use('/v1/Post', router);
 app.get('/', (req, res) => {
     res.send('Hello, world!');
 });
+// connect to db
 connectDB().then(() => {
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
