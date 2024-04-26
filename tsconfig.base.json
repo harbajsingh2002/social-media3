@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@social-media/userPost": ["userPost/src/index.ts"],
+      "@social-media/userPost1": ["apps/userPost1/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

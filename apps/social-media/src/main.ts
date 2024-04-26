@@ -1,21 +1,17 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
-
 import express from 'express';
-import * as path from 'path';
-
+import { connectDB } from './config/db';
+import router from './routes/userRoutes';
+// import Router from './src/routes/postRoute';
 const app = express();
-
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
-
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to social-media!' });
+const PORT = process.env.PORT || 3000;
+app.use(express.json());
+app.use('/v1/user', router);
+// app.use(Router)
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
 });
-
-const port = process.env.PORT || 3333;
-const server = app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}/api`);
+connectDB().then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
 });
-server.on('error', console.error);

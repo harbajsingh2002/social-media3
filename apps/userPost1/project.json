@@ -1,0 +1,9 @@
+{
+  "name": "userPost1",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/userPost1/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project userPost1 --web",
+  "targets": {}
+}
