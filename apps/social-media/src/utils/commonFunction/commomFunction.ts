@@ -1,9 +1,10 @@
 import ITokenDetails from '../commonFunction/ITokenDetails';
 import bcrypt from 'bcrypt';
+import dotenv from 'dotenv'
 import jwt from 'jsonwebtoken';
-import dotenv from 'dotenv';
+// import { JWT_SECRET } from '../../env';
 
-dotenv.config;
+dotenv.config()
 
 export default class CommonFunction {
     private bcryptInstance: typeof bcrypt;

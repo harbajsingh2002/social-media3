@@ -1,4 +1,4 @@
-import { IUser } from '../utils/interface/Iuser';
+import { IUser } from '../../../social-media/src/utils/interface/Iuser';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 import { Response } from 'express';
 import { IncomingHttpHeaders } from 'http';

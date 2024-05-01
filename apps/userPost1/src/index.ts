@@ -1,11 +1,15 @@
-import *as express from 'express';
+import * as express from 'express';
 import { connectDB } from './config/db';
 import router from './routes/routes';
+import * as dotenv from 'dotenv';
+
+dotenv.config()
+
 const app = express();
 const PORT = process.env.PORT || 3000;
-//  add  json
+
 app.use(express.json());
-app.use('/v1/Post', router);
+app.use(router);
 app.get('/', (req, res) => {
     res.send('Hello, world!');
 });

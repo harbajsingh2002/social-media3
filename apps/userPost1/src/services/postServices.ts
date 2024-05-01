@@ -1,7 +1,7 @@
 import post from '../model/postModels';
 import ErrorMessageEnum from '../utils/enums/ErrorMessageEnum';
 import { IPost } from '../utils/interface/IPost';
-import user from '../../../social-media/src/model/userModel'
+import user from '../../../social-media/src/model/userModel';
 
 //create post
 
@@ -33,7 +33,7 @@ const updatePost = async (id: string, body: IPost) => {
     }
 };
 
-// delete post 
+// delete post
 
 const deletePost = async (id: string, body: IPost) => {
     try {
@@ -70,15 +70,15 @@ const likeAndDislike = async (id: string, body: IPost) => {
 
 const getPost = async (id: string) => {
     try {
-
         const Post = await post.findById(id);
         return Post;
     } catch (error) {
         throw error;
     }
-}
+};
 
 //get  timeline  post
+
 const getTimelinePosts = async (username: string) => {
     try {
         const currentUser: any = await user.findOne({ username: username });
@@ -97,14 +97,26 @@ const getTimelinePosts = async (username: string) => {
 
 //get all posts
 
-const getAllPosts = async () => {
-
+const getAllPosts = async (pageNumber = 1, pageSize = 10) => {
     try {
-        const Post = await post.aggregate([{ $sample: { size: 40 } }]);
-        return Post;
+        const skip = (pageNumber - 1) * pageSize;
+        const posts = await post.aggregate([
+            { $sample: { size: 40 } },
+            { $skip: skip },
+            { $limit: pageSize },
+        ]);
+        return posts;
     } catch (error) {
         throw error;
     }
 };
 
-export { createPost, updatePost, deletePost, likeAndDislike, getPost, getTimelinePosts, getAllPosts };
+export {
+    createPost,
+    updatePost,
+    deletePost,
+    likeAndDislike,
+    getPost,
+    getTimelinePosts,
+    getAllPosts,
+};

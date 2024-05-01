@@ -1,24 +1,64 @@
 import * as express from 'express';
 const router = express.Router();
-import postController from "../controller/postController";
-import authenticate from "../../../social-media/src/middleware/auth";
+import postController from '../controller/postController';
+import authenticate from '../../../social-media/src/middleware/auth';
+import validationMiddleware from '../validations/joivalidation';
 
 // create post
 
-router.post("/createPost", authenticate, (req, res) => postController.createPostController(req, res));
-//update post 
-router.patch("/updatePost/:id", authenticate, (req, res) => postController.updatePostController(req, res));
+router.post(
+    '/createPost',
+    (req, res, next) => validationMiddleware(req, res, next, 'post'),
+    authenticate,
+    postController.createPostController
+);
+
+//update post
+router.patch(
+    '/updatePost/:id',
+    (req, res, next) => validationMiddleware(req, res, next, 'post'),
+    authenticate,
+    postController.updatePostController
+);
+
 // delete post
-router.delete("/deletePost/:id", authenticate, (req, res) => postController.deletePostController(req, res));
+router.delete(
+    '/deletePost/:id',
+    (req, res, next) => validationMiddleware(req, res, next, 'post'),
+    authenticate,
+    postController.deletePostController
+);
+
 // like dislike post
-router.put("/like/:id", authenticate, (req, res) => postController.likeAndDislikeController(req, res));
-// get post by Id 
-router.get("/getPost/:id", authenticate, (req, res) => postController.getPostController(req, res));
-// get Timeline post 
-router.post("/getTimelinePost/:username", authenticate, (req, res) => postController.getTimelinePostsController(req, res));
+router.put(
+    '/like/:id',
+    (req, res, next) => validationMiddleware(req, res, next, 'post'),
+    authenticate,
+    postController.likeAndDislikeController
+);
+
+// get post by Id
+router.get(
+    '/getPost/:id',
+    (req, res, next) => validationMiddleware(req, res, next, 'post'),
+    authenticate,
+    postController.getPostController
+);
+
+// get Timeline post
+router.post(
+    '/getTimelinePost/:username',
+    (req, res, next) => validationMiddleware(req, res, next, 'post'),
+    authenticate,
+    postController.getTimelinePostsController
+);
+
 // get all posts
-router.get("/getAllPost", authenticate, (req, res) => postController.getAllPostsController(req, res));
-
-
+router.get(
+    '/getAllPost',
+    (req, res, next) => validationMiddleware(req, res, next, 'post'),
+    authenticate,
+    postController.getAllPostsController
+);
 
 export default router;

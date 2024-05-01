@@ -1,0 +1,56 @@
+{
+  "name": "friend-request",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/friend-request/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/esbuild:esbuild",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "platform": "node",
+        "outputPath": "dist/apps/friend-request",
+        "format": ["cjs"],
+        "bundle": false,
+        "main": "apps/friend-request/src/main.ts",
+        "tsConfig": "apps/friend-request/tsconfig.app.json",
+        "assets": ["apps/friend-request/src/assets"],
+        "generatePackageJson": true,
+        "esbuildOptions": {
+          "sourcemap": true,
+          "outExtension": {
+            ".js": ".js"
+          }
+        }
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "esbuildOptions": {
+            "sourcemap": false,
+            "outExtension": {
+              ".js": ".js"
+            }
+          }
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "friend-request:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "friend-request:build:development"
+        },
+        "production": {
+          "buildTarget": "friend-request:build:production"
+        }
+      }
+    }
+  }
+}

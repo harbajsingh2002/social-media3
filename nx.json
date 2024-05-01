@@ -34,7 +34,14 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/social-media-e2e/**/*"]
+      "exclude": ["apps/social-media-e2e/**/*", "apps/friend-request-e2e/**/*"]
     }
-  ]
+  ],
+  "targetDefaults": {
+    "@nx/esbuild:esbuild": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  }
 }

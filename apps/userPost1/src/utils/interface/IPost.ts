@@ -1,4 +1,4 @@
-import { IUser } from './Iuser';
+import { IUser } from '../../../../social-media/src/utils/interface/Iuser';
 
 export interface IPost {
     id: string;

@@ -9,9 +9,16 @@ import {
     getTimelinePosts,
     getAllPosts,
 } from '../services/postServices';
+import {
+    failResponse,
+    successResponse,
+} from '../utils/commonFunction/response';
 import { Request, Response } from 'express';
 
+
+
 //create post
+
 async function createPostController(req: Request, res: Response) {
     try {
         const newPost = await createPost(req.body);
@@ -19,12 +26,12 @@ async function createPostController(req: Request, res: Response) {
             newPost,
             message: messageEnum.POST_CREATED_SUCCESSFULL,
         });
-    } catch (err) {
-        console.log(err);
-        res.status(statusCode.serverError).json({
-            message: messageEnum.POST_CREATED_FAILD,
-            err,
-        });
+    } catch (err: any) {
+        res
+            .status(statusCode.badRequest)
+            .json(
+                failResponse(statusCode.badRequest, err.message, message.somethingWrong)
+            );
     }
 }
 
@@ -39,12 +46,12 @@ async function updatePostController(req: Request, res: Response) {
             updatedPost,
             message: messageEnum.POST_UPDATED_SUCCESSFULLY,
         });
-    } catch (err) {
-        console.log(err);
-        res.status(statusCode.serverError).json({
-            message: messageEnum.POST_UPDATED_FAILED,
-            err,
-        });
+    } catch (err: any) {
+        res
+            .status(statusCode.badRequest)
+            .json(
+                failResponse(statusCode.badRequest, err.message, message.somethingWrong)
+            );
     }
 }
 
@@ -59,12 +66,12 @@ async function deletePostController(req: Request, res: Response) {
             deletedPost,
             message: messageEnum.POST_DELETE_SUCCESSFULLY,
         });
-    } catch (err) {
-        console.log(err);
-        res.status(statusCode.serverError).json({
-            message: messageEnum.POST_DELETION_FAILED,
-            err,
-        });
+    } catch (err: any) {
+        res
+            .status(statusCode.badRequest)
+            .json(
+                failResponse(statusCode.badRequest, err.message, message.somethingWrong)
+            );
     }
 }
 
@@ -79,12 +86,12 @@ async function likeAndDislikeController(req: Request, res: Response) {
             post,
             message: messageEnum.POST_LIKE_DISLIKE,
         });
-    } catch (err) {
-        console.log(err);
-        res.status(statusCode.serverError).json({
-            message: messageEnum.POST_LIKE_DISLIKE_ACTION_FAILED,
-            err,
-        });
+    } catch (err: any) {
+        res
+            .status(statusCode.badRequest)
+            .json(
+                failResponse(statusCode.badRequest, err.message, message.somethingWrong)
+            );
     }
 }
 
@@ -98,12 +105,12 @@ async function getPostController(req: Request, res: Response) {
             post,
             message: messageEnum.POST_HAS_BEEN_FATCH_SUCCESSFULL,
         });
-    } catch (err) {
-        console.log(err);
-        res.status(500).json({
-            message: messageEnum.POST_FATCH_FAILED,
-            err,
-        });
+    } catch (err: any) {
+        res
+            .status(statusCode.badRequest)
+            .json(
+                failResponse(statusCode.badRequest, err.message, message.somethingWrong)
+            );
     }
 }
 
@@ -117,12 +124,12 @@ async function getTimelinePostsController(req: Request, res: Response) {
             posts,
             message: messageEnum.TIMELIN_POST_HAS_BEEN_FATCH,
         });
-    } catch (err) {
-        console.log(err);
-        res.status(statusCode.serverError).json({
-            message: messageEnum.TIMELINE_POST_FATCHING_FAILED,
-            err,
-        });
+    } catch (err: any) {
+        res
+            .status(statusCode.badRequest)
+            .json(
+                failResponse(statusCode.badRequest, err.message, message.somethingWrong)
+            );
     }
 }
 
@@ -130,20 +137,31 @@ async function getTimelinePostsController(req: Request, res: Response) {
 
 async function getAllPostsController(req: Request, res: Response) {
     try {
-        const posts = await getAllPosts();
+        let page: string | undefined = req.query.page as string;
+        let size: string | undefined = req.query.size as string;
+        if (Array.isArray(page)) {
+            page = page[0];
+        }
+        if (Array.isArray(size)) {
+            size = size[0];
+        }
+
+        const pageNumber = parseInt(page || '1');
+        const pageSize = parseInt(size || '10');
+
+        const posts = await getAllPosts(pageNumber, pageSize);
         res.status(200).json({
             posts,
-            message: 'Posts have been fetched Successfully',
+            message: messageEnum.POST_HAS_BEEN_FATCH_SUCCESSFULL,
         });
-    } catch (err) {
-        console.log(err);
-        res.status(500).json({
-            message: 'Posts fetch failed',
-            err,
-        });
+    } catch (err: any) {
+        res
+            .status(statusCode.badRequest)
+            .json(
+                failResponse(statusCode.badRequest, err.message, message.somethingWrong)
+            );
     }
 }
-
 export default {
     createPostController,
     updatePostController,
@@ -151,5 +169,5 @@ export default {
     likeAndDislikeController,
     getPostController,
     getTimelinePostsController,
-    getAllPostsController
+    getAllPostsController,
 };

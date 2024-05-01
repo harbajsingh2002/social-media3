@@ -1,4 +1,4 @@
-import bcrypt, { hashSync } from 'bcrypt';
+import bcrypt from 'bcrypt';
 import User from '../model/userModel';
 import jwt from 'jsonwebtoken';
 import CommonFunction from '../utils/commonFunction/commomFunction';
