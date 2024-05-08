@@ -22,10 +22,9 @@ import { Request, Response } from 'express';
 async function createPostController(req: Request, res: Response) {
     try {
         const newPost = await createPost(req.body);
-        res.status(statusCode.success).json({
-            newPost,
-            message: messageEnum.POST_CREATED_SUCCESSFULL,
-        });
+        res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.POST_CREATED_SUCCESSFULL
+        )),
+            newPost
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -42,10 +41,8 @@ async function updatePostController(req: Request, res: Response) {
         const userId = req.params.id;
         const body = req.body;
         const updatedPost = await updatePost(userId, body);
-        res.status(statusCode.success).json({
-            updatedPost,
-            message: messageEnum.POST_UPDATED_SUCCESSFULLY,
-        });
+        res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.POST_UPDATED_SUCCESSFULLY
+        ))
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -62,10 +59,8 @@ async function deletePostController(req: Request, res: Response) {
         const userId: any = req.params.id;
         const body = req.body;
         const deletedPost = await deletePost(userId, body);
-        res.status(statusCode.success).json({
-            deletedPost,
-            message: messageEnum.POST_DELETE_SUCCESSFULLY,
-        });
+        res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.POST_DELETE_SUCCESSFULLY
+        )), deletedPost
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -82,10 +77,8 @@ async function likeAndDislikeController(req: Request, res: Response) {
         const id = req.params.id;
         const body = req.body;
         const post = await likeAndDislike(id, body);
-        res.status(statusCode.success).json({
-            post,
-            message: messageEnum.POST_LIKE_DISLIKE,
-        });
+        res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.POST_LIKE_DISLIKE
+        )), post
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -101,10 +94,8 @@ async function getPostController(req: Request, res: Response) {
     try {
         const id = req.params.id;
         const post = await getPost(id);
-        res.status(statusCode.success).json({
-            post,
-            message: messageEnum.POST_HAS_BEEN_FATCH_SUCCESSFULL,
-        });
+        res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.POST_HAS_BEEN_FATCH_SUCCESSFULL
+        )), post
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -120,10 +111,8 @@ async function getTimelinePostsController(req: Request, res: Response) {
     try {
         const username = req.params.username;
         const posts = await getTimelinePosts(username);
-        res.status(statusCode.success).json({
-            posts,
-            message: messageEnum.TIMELIN_POST_HAS_BEEN_FATCH,
-        });
+        res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.TIMELINE_POST_FATCHING_FAILED
+        )), posts
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -150,10 +139,9 @@ async function getAllPostsController(req: Request, res: Response) {
         const pageSize = parseInt(size || '10');
 
         const posts = await getAllPosts(pageNumber, pageSize);
-        res.status(200).json({
-            posts,
-            message: messageEnum.POST_HAS_BEEN_FATCH_SUCCESSFULL,
-        });
+        res.status(200).json(successResponse(statusCode.success, messageEnum.POST_HAS_BEEN_FATCH_SUCCESSFULL
+        )),
+            posts
     } catch (err: any) {
         res
             .status(statusCode.badRequest)

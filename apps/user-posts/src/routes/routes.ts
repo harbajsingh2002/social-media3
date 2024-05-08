@@ -40,7 +40,7 @@ router.put(
 // get post by Id
 router.get(
     '/getPost/:id',
-    (req, res, next) => validationMiddleware(req, res, next, 'post'),
+    (req, res, next) => validationMiddleware(req, res, next, 'Post'),
     authenticate,
     postController.getPostController
 );
@@ -48,7 +48,7 @@ router.get(
 // get Timeline post
 router.post(
     '/getTimelinePost/:username',
-    (req, res, next) => validationMiddleware(req, res, next, 'post'),
+    (req, res, next) => validationMiddleware(req, res, next, 'Post'),
     authenticate,
     postController.getTimelinePostsController
 );

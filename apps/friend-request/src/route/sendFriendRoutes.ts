@@ -26,7 +26,7 @@ router.post(
 
 router.post(
     '/rejectRequest',
-    (req, res, next) => validationMiddleware(req, res, next, 'reject'),
+    (req, res, next) => validationMiddleware(req, res, next, 'accept'),
     auth,
     friendController.rejectFriendsRequest
 );
@@ -44,7 +44,7 @@ router.get(
 
 router.get(
     '/getRequest/sent/userId',
-    (req, res, next) => validationMiddleware(req, res, next, 'sent'),
+    (req, res, next) => validationMiddleware(req, res, next, 'pending'),
     auth,
     friendController.rejectFriendsRequest
 );

@@ -21,11 +21,10 @@ async function sendRequest(req: Request, res: Response): Promise<void> {
     try {
         const { senderId, receiverId } = req.body;
         const friendRequest = await createFriendRequest(senderId, receiverId);
-        res.json({
-            success: true,
-            message: SuccessMessage.FRIEND_REQUEST_SENT,
-            friendRequest,
-        });
+        res.json(
+            successResponse(statusCode.success, SuccessMessage.FRIEND_REQUEST_SENT)
+        ),
+            friendRequest;
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -45,17 +44,23 @@ async function acceptFriendsRequest(
         const { requestId } = req.body;
         const friendRequest = await acceptFriendRequest(requestId);
         if (!friendRequest) {
-            res.status(StatusCodeEnum.NOT_FOUND).json({
-                success: false,
-                message: ErrorMessage.FRIEND_REQUEST_NOT_FOUND,
-            });
+            res
+                .status(StatusCodeEnum.NOT_FOUND)
+                .json(
+                    failResponse(
+                        statusCode.badRequest,
+                        ErrorMessage.FRIEND_REQUEST_NOT_FOUND
+                    )
+                );
             return;
         }
-        res.json({
-            success: true,
-            message: SuccessMessage.FRIEND_REQUEST_ACCEPTED,
-            friendRequest,
-        });
+        res.json(
+            successResponse(
+                statusCode.success,
+                SuccessMessage.FRIEND_REQUEST_ACCEPTED
+            )
+        ),
+            friendRequest;
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -75,17 +80,23 @@ async function rejectFriendsRequest(
         const { requestId } = req.body;
         const friendRequest = await rejectFriendRequest(requestId);
         if (!friendRequest) {
-            res.status(StatusCodeEnum.NOT_FOUND).json({
-                success: false,
-                message: ErrorMessage.FRIEND_REQUEST_NOT_FOUND,
-            });
+            res
+                .status(StatusCodeEnum.NOT_FOUND)
+                .json(
+                    failResponse(
+                        statusCode.badRequest,
+                        ErrorMessage.FRIEND_REQUEST_NOT_FOUND
+                    )
+                );
             return;
         }
-        res.json({
-            success: true,
-            message: SuccessMessage.FRIEND_REQUEST_ACCEPTED,
-            friendRequest,
-        });
+        res.json(
+            successResponse(
+                statusCode.success,
+                SuccessMessage.FRIEND_REQUEST_REJECTED
+            )
+        ),
+            friendRequest;
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -101,11 +112,10 @@ async function getPendigsRequest(req: Request, res: Response): Promise<void> {
     try {
         const { userId } = req.params;
         const pendingRequests = await getPendingFriendRequests(userId);
-        res.json({
-            success: true,
-            message: SuccessMessage.FRIEND_REQUEST_SENT,
-            pendingRequests,
-        });
+        res.json(
+            successResponse(statusCode.success, SuccessMessage.FRIEND_REQUEST_SENT)
+        ),
+            pendingRequests;
     } catch (err: any) {
         res
             .status(statusCode.badRequest)
@@ -124,11 +134,10 @@ async function getSentFriendRequest(
     try {
         const { userId } = req.params;
         const sentRequests = await getSentFriendRequests(userId);
-        res.json({
-            success: true,
-            message: SuccessMessage.FRIEND_REQUEST_SENT,
-            sentRequests,
-        });
+        res.json(
+            successResponse(statusCode.success, SuccessMessage.FRIEND_REQUEST_SENT)
+        ),
+            sentRequests;
     } catch (err: any) {
         res
             .status(statusCode.badRequest)

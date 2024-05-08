@@ -34,7 +34,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/social-media-e2e/**/*", "apps/friend-request-e2e/**/*"]
+      "exclude": ["apps/social-media-e2e/**/*", "apps/friend-request-e2e/**/*", "apps/chat-e2e/**/*", "apps/user-posts-e2e/**/*"]
     }
   ],
   "targetDefaults": {

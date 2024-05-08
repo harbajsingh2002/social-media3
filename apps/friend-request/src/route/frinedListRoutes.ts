@@ -8,7 +8,7 @@ import validationMiddleware from '../vailidation/joivalidation';
 
 router.post(
     '/addfriend',
-    (req, res, next) => validationMiddleware(req, res, next, 'create'),
+    (req, res, next) => validationMiddleware(req, res, next, 'addFriend'),
     auth,
     FriendListController.addFriend
 );
@@ -17,7 +17,7 @@ router.post(
 
 router.get(
     '/getfriendlist/:id',
-    (req, res, next) => validationMiddleware(req, res, next, 'create'),
+    (req, res, next) => validationMiddleware(req, res, next, 'pending'),
     auth,
     FriendListController.getFriendList
 );
@@ -26,7 +26,7 @@ router.get(
 
 router.delete(
     '/friends/:userId/:friendId',
-    (req, res, next) => validationMiddleware(req, res, next, 'create'),
+    (req, res, next) => validationMiddleware(req, res, next, 'deleteFriend'),
     auth,
     FriendListController.deleteFriend
 );

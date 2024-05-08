@@ -5,29 +5,31 @@
  */
 
 import joi from 'joi'
+import { Enum } from '../utils/enums/roleEnum'
 
 // Object schema validation
-const listing = joi.object({
-    limit: joi.number().required(),
-    page: joi.number().required(),
-    sortBy: joi.string().required(),
-    sort: joi.number().required(),
-    searchBy: joi.string().optional(),
-    keyword: joi.string().optional(),
-})
 
-const product = joi.object({
-    name: joi.string().required(),
-    description: joi.string().required(),
-    price: joi.string().required(),
+
+const deleteUser = joi.object({
+    userId: joi.string().required(),
 })
 
 const user = joi.object({
-    name: joi.string().optional(),
-    age: joi.string().optional(),
-    email: joi.string().email().optional(),
-    password: joi.string().optional(),
-})
+    _id: joi.string(),
+    username: joi.string().min(3).max(50).required(),
+    email: joi.string().email().max(100).required(),
+    password: joi.string().min(6).required(),
+    profilePicture: joi.string(),
+    coverPicture: joi.string(),
+    followers: joi.array().items(joi.string()),
+    followings: joi.array().items(joi.string()),
+    isAdmin: joi.boolean(),
+    desc: joi.string().max(50),
+    city: joi.string().max(50),
+    isDeleted: joi.boolean(),
+    from: joi.string().max(50),
+    relationship: joi.number().valid(...Object.values(Enum)),
+});
 
 const login = joi.object({
     email: joi.string().email().required(),
@@ -40,12 +42,8 @@ const validationMiddleware = async (req: any, res: any, next: any, schema: strin
         allowUnknown: false,
     }
 
-    if (schema == 'listing') {
-        var { error } = listing.validate(req.query, option)
-    }
-
-    if (schema == 'product') {
-        var { error } = product.validate(req.body, option)
+    if (schema == 'deleteUser') {
+        var { error } = deleteUser.validate(req.body, option)
     }
 
     if (schema == 'user') {

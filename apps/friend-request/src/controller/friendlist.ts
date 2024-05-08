@@ -18,10 +18,9 @@ async function addFriend(req: Request, res: Response): Promise<void> {
     try {
         const { userId, friendId } = req.body;
         await addFriendToList(userId, friendId);
-        res.status(statusCode.success).json({
-            success: true,
-            message: SuccessMessage.FRIEND_ADDED,
-        });
+        res
+            .status(statusCode.success)
+            .json(successResponse(statusCode.success, SuccessMessage.FRIEND_ADDED));
     } catch (error) {
         res
             .status(statusCode.badRequest)
@@ -41,11 +40,10 @@ async function getFriendList(req: Request, res: Response): Promise<void> {
     try {
         const { userId } = req.params;
         const friendList = await getUserFriendList(userId);
-        res.status(statusCode.success).json({
-            success: true,
-            message: SuccessMessage.FRIEND_LIST_RETRIEVED,
-            friendList,
-        });
+
+        res.status(statusCode.success).json(successResponse(statusCode.success, SuccessMessage.FRIEND_LIST_RETRIEVED
+        ))
+        friendList
     } catch (error) {
         res
             .status(statusCode.badRequest)
@@ -65,10 +63,8 @@ async function deleteFriend(req: Request, res: Response): Promise<void> {
     try {
         const { userId, friendId } = req.params;
         await deleteFriendFromList(userId, friendId);
-        res.status(statusCode.success).json({
-            success: true,
-            message: SuccessMessage.FRIEND_DELETED,
-        });
+        res.status(statusCode.success).json(successResponse(statusCode.success, SuccessMessage.FRIEND_DELETED
+        ))
     } catch (error) {
         res
             .status(statusCode.badRequest)

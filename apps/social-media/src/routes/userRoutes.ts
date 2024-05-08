@@ -5,7 +5,7 @@ import auth from '../middleware/auth'
 import validationMiddleware from '../vailidation/joivalidation'
 
 // login signup crud 
-router.post('/signUp', (req, res, next) => validationMiddleware(req, res, next, 'login'), userController.create)
+router.post('/signUp', (req, res, next) => validationMiddleware(req, res, next, 'user'), userController.create)
 router.post('/login', (req, res, next) => validationMiddleware(req, res, next, 'login'), userController.login)
 
 // user crud

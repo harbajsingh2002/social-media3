@@ -1,37 +1,31 @@
 /*
  * @file: validators/joi.validator.js
  * @description: It contain validation function on request body, params and query.
- * @author: Rajneshwar Singh
  */
 
 import joi from 'joi'
 
 // Object schema validation
-const listing = joi.object({
-    limit: joi.number().required(),
-    page: joi.number().required(),
-    sortBy: joi.string().required(),
-    sort: joi.number().required(),
-    searchBy: joi.string().optional(),
-    keyword: joi.string().optional(),
+const deleteFriend = joi.object({
+    userId: joi.string().required(),
+    friendId: joi.string().required(),
 })
 
-const product = joi.object({
-    name: joi.string().required(),
-    description: joi.string().required(),
-    price: joi.string().required(),
+const pending = joi.object({
+    userId: joi.string().required(),
 })
 
-const user = joi.object({
-    name: joi.string().optional(),
-    age: joi.string().optional(),
-    email: joi.string().email().optional(),
-    password: joi.string().optional(),
+const accept = joi.object({
+    requestId: joi.string().required(),
 })
 
-const login = joi.object({
-    email: joi.string().email().required(),
-    password: joi.string().required(),
+const create = joi.object({
+    senderId: joi.string().required(),
+    reciverId: joi.string().required(),
+})
+const addfriend = joi.object({
+    userId: joi.string().required(),
+    friendId: joi.string().required(),
 })
 
 const validationMiddleware = async (req: any, res: any, next: any, schema: string) => {
@@ -40,20 +34,23 @@ const validationMiddleware = async (req: any, res: any, next: any, schema: strin
         allowUnknown: false,
     }
 
-    if (schema == 'listing') {
-        var { error } = listing.validate(req.query, option)
+
+    if (schema == 'pending') {
+        var { error } = pending.validate(req.params, option)
     }
 
-    if (schema == 'product') {
-        var { error } = product.validate(req.body, option)
+    if (schema == 'accept') {
+        var { error } = accept.validate(req.body, option)
     }
 
-    if (schema == 'user') {
-        var { error } = user.validate(req.body, option)
+    if (schema == 'create') {
+        var { error } = create.validate(req.body, option)
     }
-
-    if (schema == 'login') {
-        var { error } = login.validate(req.body, option)
+    if (schema == 'addfriend') {
+        var { error } = addfriend.validate(req.body, option)
+    }
+    if (schema == 'deleteFriend') {
+        var { error } = deleteFriend.validate(req.params, option)
     }
 
     if (error) {

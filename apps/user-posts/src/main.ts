@@ -1,7 +1,7 @@
-import * as express from 'express';
+import express from 'express';
 import { connectDB } from './config/db';
 import router from './routes/routes';
-import * as dotenv from 'dotenv';
+import dotenv from 'dotenv';
 
 dotenv.config()
 
@@ -11,11 +11,11 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(router);
 app.get('/', (req, res) => {
-    res.send('Hello, world!');
+  res.send('Hello, world!');
 });
 // connect to db
 connectDB().then(() => {
-    app.listen(PORT, () => {
-        console.log(`Server is running on port ${PORT}`);
-    });
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
 });
