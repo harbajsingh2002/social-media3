@@ -5,6 +5,7 @@ import {
     getUserFriendList,
     deleteFriendFromList,
 } from '../service/frinedlist';
+import logger from '../utils/logger/index'
 import { SuccessMessage } from '../utils/enums/messageEnum';
 import {
     failResponse,
@@ -22,6 +23,7 @@ async function addFriend(req: Request, res: Response): Promise<void> {
             .status(statusCode.success)
             .json(successResponse(statusCode.success, SuccessMessage.FRIEND_ADDED));
     } catch (error) {
+        logger.error(message.errorLog('userList', 'userController', error))
         res
             .status(statusCode.badRequest)
             .json(
@@ -45,6 +47,7 @@ async function getFriendList(req: Request, res: Response): Promise<void> {
         ))
         friendList
     } catch (error) {
+        logger.error(message.errorLog('userList', 'userController', error))
         res
             .status(statusCode.badRequest)
             .json(
@@ -66,6 +69,7 @@ async function deleteFriend(req: Request, res: Response): Promise<void> {
         res.status(statusCode.success).json(successResponse(statusCode.success, SuccessMessage.FRIEND_DELETED
         ))
     } catch (error) {
+        logger.error(message.errorLog('userList', 'userController', error))
         res
             .status(statusCode.badRequest)
             .json(

@@ -4,6 +4,7 @@ import {
     failResponse,
     successResponse,
 } from "../utils/commonFunction/response";
+import logger from '../utils/logger/index'
 import { statusCode, message } from "../utils/commonFunction/constant";
 import ErrorMessageEnum from "../utils/enums/ErrorMessageEnum";
 // create  user
@@ -26,6 +27,7 @@ async function create(req: Request, res: Response) {
                 .json(successResponse(statusCode.success, data, message.add("User")));
         }
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(
@@ -66,6 +68,7 @@ async function login(req: Request, res: Response) {
                 .json(successResponse(statusCode.success, data, message.login))
         }
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(
@@ -97,6 +100,7 @@ async function update(req: Request, res: Response) {
                 .json(successResponse(statusCode.success, data, message.update('User')))
         }
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.emailOrUserExist)
             .json(
@@ -130,6 +134,7 @@ async function deleteUsers(req: Request, res: Response) {
                 .json(successResponse(statusCode.success, data, message.add('User')))
         }
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(

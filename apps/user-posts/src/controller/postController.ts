@@ -9,6 +9,7 @@ import {
     getTimelinePosts,
     getAllPosts,
 } from '../services/postServices';
+import logger from '../utils/logger/index'
 import {
     failResponse,
     successResponse,
@@ -26,6 +27,7 @@ async function createPostController(req: Request, res: Response) {
         )),
             newPost
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(
@@ -44,6 +46,7 @@ async function updatePostController(req: Request, res: Response) {
         res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.POST_UPDATED_SUCCESSFULLY
         ))
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(
@@ -62,6 +65,7 @@ async function deletePostController(req: Request, res: Response) {
         res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.POST_DELETE_SUCCESSFULLY
         )), deletedPost
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(
@@ -80,6 +84,7 @@ async function likeAndDislikeController(req: Request, res: Response) {
         res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.POST_LIKE_DISLIKE
         )), post
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(
@@ -97,6 +102,7 @@ async function getPostController(req: Request, res: Response) {
         res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.POST_HAS_BEEN_FATCH_SUCCESSFULL
         )), post
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(
@@ -114,6 +120,7 @@ async function getTimelinePostsController(req: Request, res: Response) {
         res.status(statusCode.success).json(successResponse(statusCode.success, messageEnum.TIMELINE_POST_FATCHING_FAILED
         )), posts
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(
@@ -143,6 +150,7 @@ async function getAllPostsController(req: Request, res: Response) {
         )),
             posts
     } catch (err: any) {
+        logger.error(message.errorLog('userList', 'userController', err))
         res
             .status(statusCode.badRequest)
             .json(
