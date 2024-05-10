@@ -26,6 +26,7 @@
     "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
+    "@nrwl/node": "^19.0.1",
     "@nx/esbuild": "18.3.4",
     "@nx/eslint": "18.3.4",
     "@nx/eslint-plugin": "18.3.4",
@@ -65,5 +66,6 @@
     "ts-proto": "^1.174.0",
     "typescript": "~5.4.2",
     "webpack-cli": "^5.1.4"
-  }
+  },
+  "nx": {}
 }

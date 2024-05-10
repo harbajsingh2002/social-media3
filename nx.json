@@ -43,5 +43,6 @@
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
     }
-  }
+  },
+  "defaultBase": "main"
 }
