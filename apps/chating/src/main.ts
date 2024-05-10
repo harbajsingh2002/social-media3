@@ -1,70 +1,59 @@
-
-
-import express from 'express';
 import { connectDB } from './config/db';
-// import router from './route/sendFriendRoutes';
 import dotenv from 'dotenv';
-// import { Server } from 'http';
-import io from 'socket.io-client';
+import { Server } from 'socket.io';
+import express from 'express';
 import { createServer } from 'http';
+import * as ioClient from 'socket.io-client'; // Import socket.io-client library
 
 dotenv.config();
 
 const app = express();
-const server = createServer(app);
-const PORT = process.env.PORT;
+const httpServer = createServer(app);
+const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
-// app.use(router);
 
+// Handle GET request to the root route
 app.get('/', (req, res) => {
   res.send('Hello, world!');
 });
 
-connectDB()
-  .then(() => {
-    server.listen(PORT, () => {
-      console.log(`Server is running on port ${process.env.PORT}`);
-      console.log('xtgqhvjq');
+// Start the HTTP server
+httpServer.listen(PORT, () => {
+  console.log(`Socket server is running on port ${PORT}`);
 
+  // Connect to the Socket.IO server using socket.io-client
+  const socketClient = ioClient.connect(`http://localhost:${PORT}`);
 
-      const socket = io('http://localhost:4000');
-      // Store connected socket IDs
-      const connectedClients = new Set();
-
-      // Handle connection
-      socket.on('connection', () => {
-        console.log('A user connected:', socket.id);
-
-        // Store the socket ID
-        connectedClients.add(socket.id);
-
-        // Handle messages
-        socket.on('message', (data) => {
-          console.log('Message received:', data);
-
-          // Retrieve a specific socket ID and send a message
-          // const targetSocketId = 'socket_id_to_send_to';
-          // if (connectedClients.has(targetSocketId)) {
-          //   socket.to(targetSocketId).emit('message', data);
-          // } else {
-          //   console.log('Target socket not found');
-          // }
-        });
-
-        // Handle disconnection
-        socket.on('disconnect', () => {
-          console.log('User disconnected:', socket.id);
-          connectedClients.delete(socket.id);
-        });
-      });
-
-      // Start server
-
-      // io('http://localhost:4000');
-      console.log(`Socket Server listening on port ${4000}`);
-    });
+  // Event listener for successful connection
+  socketClient.on('connect', () => {
+    console.log('Connected to Socket.IO server');
   });
+
+  // Event listener for disconnection
+  socketClient.on('disconnect', () => {
+    console.log('Disconnected from Socket.IO server');
+  });
+});
+
+connectDB().then(() => {
+  const io = new Server(httpServer);
+
+  io.on('connection', (socket) => {
+    console.log('A user connected:', socket.id);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 
