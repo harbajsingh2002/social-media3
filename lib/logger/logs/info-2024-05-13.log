@@ -1,0 +1,3198 @@
+2024-05-12 19:32:59 - d27da2e7-5d66-488e-84b5-3110e953b238 - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:02:59 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 90174,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91611136,
+      "heapTotal": 40275968,
+      "heapUsed": 24254792,
+      "external": 20698176,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.11,
+      1.51,
+      1.64
+    ],
+    "uptime": 28462.85
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:33:03 - 21e1045e-c2d2-4c4a-a0f8-19968452ce1b - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:03:03 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 90253,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91688960,
+      "heapTotal": 57577472,
+      "heapUsed": 21098912,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.43,
+      1.57,
+      1.66
+    ],
+    "uptime": 28466.56
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:36:08 - cdf9779f-b2f3-4f16-99d5-4ec0ccd2d245 - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:06:08 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 91204,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91250688,
+      "heapTotal": 57577472,
+      "heapUsed": 21098080,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      1.81,
+      1.46,
+      1.59
+    ],
+    "uptime": 28651.03
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:36:11 - 6efdb448-830e-446d-8b20-abc1e49cbd13 - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:06:11 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 91374,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 92008448,
+      "heapTotal": 57315328,
+      "heapUsed": 20743424,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.14,
+      1.53,
+      1.61
+    ],
+    "uptime": 28654.46
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:36:26 - 844e0f7f-12ab-4469-a428-0ca51b30cf95 - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:06:26 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 91695,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91578368,
+      "heapTotal": 57315328,
+      "heapUsed": 20720280,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.36,
+      1.61,
+      1.63
+    ],
+    "uptime": 28669.77
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:36:29 - 4ee265b8-6b83-438e-906c-5a1a1d470d78 - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:06:29 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 91805,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91930624,
+      "heapTotal": 40013824,
+      "heapUsed": 24374816,
+      "external": 20698176,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.36,
+      1.61,
+      1.63
+    ],
+    "uptime": 28672.46
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:37:09 - b83d2568-a070-49fd-9a02-caf9de9d0085 - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:07:09 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 92461,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 92160000,
+      "heapTotal": 40275968,
+      "heapUsed": 24464216,
+      "external": 20698176,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.14,
+      1.91,
+      1.73
+    ],
+    "uptime": 28712.22
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:37:10 - 470edac6-1023-4bb4-8830-7c400dc822bc - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:07:10 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 92529,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91607040,
+      "heapTotal": 40538112,
+      "heapUsed": 24317584,
+      "external": 20698176,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.14,
+      1.91,
+      1.73
+    ],
+    "uptime": 28713.84
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:37:42 - e3bff19b-be01-48eb-a203-0130bdbe37d7 - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:07:42 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 93175,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91553792,
+      "heapTotal": 40013824,
+      "heapUsed": 24203056,
+      "external": 20698176,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.4,
+      2.07,
+      1.79
+    ],
+    "uptime": 28745.48
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:37:44 - d9136ccc-d0af-4c5d-a1c8-fc365f954e4d - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:07:44 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 93306,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91684864,
+      "heapTotal": 40275968,
+      "heapUsed": 24492496,
+      "external": 20698176,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.4,
+      2.07,
+      1.79
+    ],
+    "uptime": 28747.85
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:37:58 - 6ffd9ee5-19b2-41e9-aa03-b76bc46ba576 - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:07:58 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 93587,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91217920,
+      "heapTotal": 57315328,
+      "heapUsed": 21078112,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.94,
+      2.25,
+      1.86
+    ],
+    "uptime": 28761.01
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:38:02 - 48c68cb3-98ec-4079-8d23-ae716c83af82 - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:08:02 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 93851,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 92184576,
+      "heapTotal": 57577472,
+      "heapUsed": 21075000,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.51,
+      2.39,
+      1.9
+    ],
+    "uptime": 28765.32
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:38:04 - b6c0e171-4af7-439e-b754-c824bdf91031 - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:08:04 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 93969,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91430912,
+      "heapTotal": 56791040,
+      "heapUsed": 20732696,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.51,
+      2.39,
+      1.9
+    ],
+    "uptime": 28767.22
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:38:40 - c8f83ef8-f7ba-46eb-86eb-99f757add25a - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:08:40 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 94461,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91774976,
+      "heapTotal": 39751680,
+      "heapUsed": 24027184,
+      "external": 20695910,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.86,
+      2.44,
+      1.94
+    ],
+    "uptime": 28803.08
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:38:42 - fabffe6e-eaee-4a2c-a3e4-518b531fd4d4 - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:08:42 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 94547,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91389952,
+      "heapTotal": 57315328,
+      "heapUsed": 21059952,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.79,
+      2.45,
+      1.94
+    ],
+    "uptime": 28805.5
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:38:53 - c63b16d4-1c37-4921-9116-923dbe9eee9a - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:08:53 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 94824,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91971584,
+      "heapTotal": 40013824,
+      "heapUsed": 24346024,
+      "external": 20698176,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.08,
+      2.55,
+      1.98
+    ],
+    "uptime": 28816.12
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:38:56 - 4d360f0c-7d11-4b8d-90ea-4280e0d13951 - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:08:56 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 94948,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91361280,
+      "heapTotal": 56791040,
+      "heapUsed": 20719128,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.08,
+      2.55,
+      1.98
+    ],
+    "uptime": 28819.12
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:39:15 - a79684b3-fc32-48d6-9532-be1213762e80 - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:09:15 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 95297,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 91549696,
+      "heapTotal": 57053184,
+      "heapUsed": 20766904,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.39,
+      2.49,
+      1.97
+    ],
+    "uptime": 28838.56
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:39:19 - 0d10c6d5-6bff-4dae-a544-41dc595782d1 - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:09:19 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 95392,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 92315648,
+      "heapTotal": 57315328,
+      "heapUsed": 21078464,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.76,
+      2.59,
+      2.01
+    ],
+    "uptime": 28841.9
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:39:26 - b2c4f275-a2e8-4c7e-a1cc-9bc89e878df8 - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:09:26 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 95672,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 92164096,
+      "heapTotal": 40013824,
+      "heapUsed": 24370800,
+      "external": 20698176,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      3.78,
+      2.61,
+      2.02
+    ],
+    "uptime": 28848.92
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:39:29 - bcb8f79d-9cf1-4603-8d3c-ca6fa6808a27 - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:09:29 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 95756,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 92954624,
+      "heapTotal": 57053184,
+      "heapUsed": 20729944,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.04,
+      2.68,
+      2.05
+    ],
+    "uptime": 28851.92
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:39:46 - 948adcb5-514f-4ebd-8bc5-7aa7935845c4 - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:09:46 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 96160,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 93192192,
+      "heapTotal": 57315328,
+      "heapUsed": 20767880,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.08,
+      2.77,
+      2.09
+    ],
+    "uptime": 28869.76
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:39:49 - c27bb9e1-21b0-440b-98c8-de1e3ec8155c - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:09:49 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 96271,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 92102656,
+      "heapTotal": 57577472,
+      "heapUsed": 21150864,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.08,
+      2.77,
+      2.09
+    ],
+    "uptime": 28872.6
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:40:00 - cd93f2a2-83f1-4fd9-92ea-f5fab44b6acc - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:10:00 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 96561,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 90951680,
+      "heapTotal": 40013824,
+      "heapUsed": 24384480,
+      "external": 20698176,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.06,
+      2.81,
+      2.11
+    ],
+    "uptime": 28883.81
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:40:06 - de64b8b2-ed43-42ed-95bf-a9067f0b4b51 - error: uncaughtException: listen EADDRINUSE: address already in use :::3003
+Error: listen EADDRINUSE: address already in use :::3003
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3003
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3003\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts:18:7\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:10:06 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 96830,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 90951680,
+      "heapTotal": 57315328,
+      "heapUsed": 21079096,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.3,
+      2.88,
+      2.13
+    ],
+    "uptime": 28889.34
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/user-posts/src/main.ts",
+      "function": null,
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+2024-05-12 19:40:07 - 79590936-10db-4578-9c82-3381c136602b - error: uncaughtException: listen EADDRINUSE: address already in use :::3002
+Error: listen EADDRINUSE: address already in use :::3002
+    at Server.setupListenHandle (node:net:1897:16)
+    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9
+    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)
+    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  "error": {
+    "code": "EADDRINUSE",
+    "errno": -98,
+    "syscall": "listen",
+    "address": "::",
+    "port": 3002
+  },
+  "stack": "Error: listen EADDRINUSE: address already in use :::3002\n    at Server.setupListenHandle (node:net:1897:16)\n    at Server._listen2 (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:97:23)\n    at listenInCluster (node:net:1945:12)\n    at Server.listen (node:net:2037:7)\n    at Function.listen (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js:635:24)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts:21:9\n    at propagateAslWrapper (/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:504:23)\n    at /home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js:541:70\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)",
+  "exception": true,
+  "date": "Mon May 13 2024 01:10:07 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 96864,
+    "uid": 1000,
+    "gid": 1000,
+    "cwd": "/home/ditsdev152/Desktop/New Folder/social-media3",
+    "execPath": "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+    "version": "v20.12.0",
+    "argv": [
+      "/home/ditsdev152/.nvm/versions/node/v20.12.0/bin/node",
+      "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/@nx/js/src/executors/node/node-with-require-overrides"
+    ],
+    "memoryUsage": {
+      "rss": 93433856,
+      "heapTotal": 57053184,
+      "heapUsed": 20755048,
+      "external": 20695754,
+      "arrayBuffers": 18263299
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.84,
+      3.02,
+      2.18
+    ],
+    "uptime": 28889.93
+  },
+  "trace": [
+    {
+      "column": 16,
+      "file": "node:net",
+      "function": "Server.setupListenHandle",
+      "line": 1897,
+      "method": "setupListenHandle",
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "Server._listen2",
+      "line": 97,
+      "method": "_listen2",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:net",
+      "function": "listenInCluster",
+      "line": 1945,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 7,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2037,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/express/lib/application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 9,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/apps/friend-request/src/main.ts",
+      "function": null,
+      "line": 21,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": "propagateAslWrapper",
+      "line": 504,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 70,
+      "file": "/home/ditsdev152/Desktop/New Folder/social-media3/node_modules/async-listener/index.js",
+      "function": null,
+      "line": 541,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/process/task_queues",
+      "function": "processTicksAndRejections",
+      "line": 95,
+      "method": null,
+      "native": false
+    }
+  ]
+}

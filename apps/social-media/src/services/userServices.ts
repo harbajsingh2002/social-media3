@@ -7,6 +7,8 @@ import ITokenDetails from '../utils/commonFunction/ITokenDetails';
 import { statusCode } from '../utils/commonFunction/constant';
 import { response } from 'express';
 import ErrorMessageEnum from '../utils/enums/ErrorMessageEnum';
+import { currentSocketId } from '../../../chating/src/main';
+console.log(currentSocketId);
 
 const commonFun = new CommonFunction(bcrypt, jwt);
 
@@ -43,11 +45,16 @@ async function login(users: IUserServices.ILoginUserRequest) {
             if (pass !== true) {
                 return 'incorrectPassword';
             }
+
+            // user.socketId = currentSocketId;
+            // await user.save();
+
             const tokenReq: ITokenDetails = {
                 id: user.id,
                 username: user.username,
                 email: user.email,
                 password: '',
+                socketId: user.socketId, 
             };
             const token: string = await commonFun.generateToken(tokenReq);
             return token;

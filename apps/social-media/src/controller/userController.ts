@@ -85,22 +85,22 @@ async function login(req: Request, res: Response) {
 
 async function update(req: Request, res: Response) {
     try {
-        const data = req.body
-        const userId: string = req.params.id
+        const data = req.body;
+        const userId: string = req.params.id;
         const user = await UserServices.update(
             data,
             userId,
         )
         if (!user) {
-            res.status(statusCode.badRequest).json(ErrorMessageEnum.INVALID_REQUEST)
+            res.status(statusCode.badRequest).json(ErrorMessageEnum.INVALID_REQUEST);
         }
         else {
             res
                 .status(statusCode.success)
-                .json(successResponse(statusCode.success, data, message.update('User')))
+                .json(successResponse(statusCode.success, data, message.update('User')));
         }
     } catch (err: any) {
-        logger.error(message.errorLog('userList', 'userController', err))
+        logger.error(message.errorLog('userList', 'userController', err));
         res
             .status(statusCode.emailOrUserExist)
             .json(

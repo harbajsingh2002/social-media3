@@ -1,0 +1,2 @@
+2024-05-12 13:00:28 - 2f231cc1-1c52-4ac3-84c0-d043dcbb979e - error: userList userController Error @ Error: User validation failed: relationship: Cast to Number failed for value "single" (type string) at path "relationship" 
+2024-05-12 13:01:48 - c0259e48-2458-4a9a-a8a5-7cf74680291c - error: userList userController Error @ Error: User validation failed: relationship: Cast to Number failed for value "married" (type string) at path "relationship" 

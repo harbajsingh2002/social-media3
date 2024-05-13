@@ -3,4 +3,5 @@ export default interface ITokenDetails {
     username: string;
     email: string;
     password: string;
-}
+    socketId:string;
+};

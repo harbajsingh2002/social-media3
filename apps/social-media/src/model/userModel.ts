@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import { Enum } from "../utils/enums/roleEnum";
 import { v4 as uuid4 } from 'uuid';
+import { boolean, string } from "joi";
 
 const UserSchema = new mongoose.Schema(
     {
@@ -66,8 +67,22 @@ const UserSchema = new mongoose.Schema(
             type: Number,
             enum: Object.values(Enum),
         },
-    },
-    { timestamps: true }
-);
-const user = mongoose.model("User", UserSchema);
+        // socketId: {
+        //     type: string,
+        //     default: null,
+        // },
+        // isOnline: {
+        //     type: Boolean, // Corrected to Boolean, not boolean
+        //     default: false,
+        // }
+        socketId: {
+            type: String, 
+            default: null,
+        },
+        isOnline: {
+            type: Boolean,
+            default: false,
+        }
+    }, { timestamps: true });
+const user = mongoose.model('User', UserSchema);
 export default user;

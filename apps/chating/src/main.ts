@@ -3,7 +3,8 @@ import dotenv from 'dotenv';
 import { Server } from 'socket.io';
 import express from 'express';
 import { createServer } from 'http';
-import * as ioClient from 'socket.io-client'; // Import socket.io-client library
+import * as ioClient from 'socket.io-client'; 
+export let currentSocketId = null; 
 
 dotenv.config();
 
@@ -28,11 +29,13 @@ httpServer.listen(PORT, () => {
   // Event listener for successful connection
   socketClient.on('connect', () => {
     console.log('Connected to Socket.IO server');
+    currentSocketId = socketClient.id; 
   });
 
   // Event listener for disconnection
   socketClient.on('disconnect', () => {
     console.log('Disconnected from Socket.IO server');
+    currentSocketId = null; 
   });
 });
 

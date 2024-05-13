@@ -14,6 +14,7 @@ export interface ICreateUserRequest extends Request {
     city?: string;
     from?: string;
     relationship?: 1 | 2;
+    // socketId?:string;
 }
 export interface ILoginUserRequest extends Request {
     email: string;
